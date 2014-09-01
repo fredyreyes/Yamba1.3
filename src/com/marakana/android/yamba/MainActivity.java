@@ -9,22 +9,20 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
-	@Override
+	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 	}
 
-	// Called to lazily initialize the action bar
-	@Override
+
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
+	
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
 
-	// Called every time user clicks on an action
-	@Override
+	
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.action_settings:
